@@ -4,8 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Getter @Setter @ToString
-@Entity @Table(name = "MEMBER")
-@NoArgsConstructor @AllArgsConstructor //Delete after dev
+@Entity
 public class Member {
 
     @Id

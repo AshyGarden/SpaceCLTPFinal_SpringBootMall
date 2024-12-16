@@ -5,7 +5,6 @@ import lombok.*;
 
 @Getter @Setter @ToString
 @Entity @Table(name = "ADMINISTRATOR")
-@NoArgsConstructor @AllArgsConstructor //Delete after dev
 public class Administrator {
 
     @Id

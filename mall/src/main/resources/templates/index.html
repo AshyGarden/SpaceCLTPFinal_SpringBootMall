@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"　lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>Shopping Mall</title>
 </head>
 <body>
 
-    おはいおございます:)
+    おはいおございます.　これはメインページです.<br/>
+    <a sec:authorzie="isAnonymous()" th:href="@{/login}">ログイン</a> <br/>
+    <a sec:authorzie="isAuthenticated()" th:href="@{/logout}">ログアウト</a> <br/>
+    <div sec:authentication="name"></div>様　歓迎します!
 
 </body>
 </html>
